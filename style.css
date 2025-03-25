@@ -1,9 +1,40 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
+    background-color: #f7f7f7; /* Добавление светлого фона */
+    margin: 0;
+    padding: 20px;
 }
+
+h1 {
+    font-size: 24px;
+    color: #333; /* Темный цвет для текста */
+    margin-bottom: 30px;
+}
+
 button {
-    padding: 10px 20px;
+    padding: 15px 30px; /* Увеличение отступов для удобства на мобильных */
     font-size: 18px;
+    background-color: #ff6600; /* Яркий оранжевый цвет для кнопки */
+    color: white;
+    border: none;
+    border-radius: 5px; /* Скругление углов */
     cursor: pointer;
+    width: 100%; /* Кнопка будет растягиваться на весь экран */
+    max-width: 300px; /* Ограничение ширины кнопки */
+    margin: 0 auto; /* Выравнивание по центру */
+    transition: background-color 0.3s; /* Плавное изменение фона */
+}
+
+button:hover {
+    background-color: #e55b00; /* Тёмный оранжевый при наведении */
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px; /* Меньше отступов на мобильных */
+    }
+    h1 {
+        font-size: 20px; /* Уменьшение шрифта заголовка на мобильных */
+    }
 }
