@@ -38,3 +38,8 @@ button:hover {
         font-size: 20px; /* Уменьшение шрифта заголовка на мобильных */
     }
 }
+
+img {
+    max-width: 100%;
+    height: auto;
+}
