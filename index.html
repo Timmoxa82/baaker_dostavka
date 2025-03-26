@@ -3,13 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Меню пекарни</title>
+    <title>Меню Пекарни "Мистер Плюшкин"</title>
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Добро пожаловать в Пекарню "Мистер Плюшкин"!</h1>
-    <button id="orderBtn">Сделать заказ</button>
+    <h1>Меню Пекарни "Мистер Плюшкин"</h1>
+
+    <div class="category">
+        <h2>Осетинские пироги</h2>
+        <div class="item">
+            <p>Осетинский пирог с картофелем - 1,2 кг</p>
+            <p>1 000 ₽</p>
+            <button onclick="addToCart('Осетинский пирог с картофелем')">Добавить</button>
+        </div>
+        <div class="item">
+            <p>Осетинский пирог с мясом - 1,2 кг</p>
+            <p>1 600 ₽</p>
+            <button onclick="addToCart('Осетинский пирог с мясом')">Добавить</button>
+        </div>
+        <div class="item">
+            <p>Осетинский пирог со шпинатом - 1,2 кг</p>
+            <p>1 070 ₽</p>
+            <button onclick="addToCart('Осетинский пирог со шпинатом')">Добавить</button>
+        </div>
+    </div>
+
+    <div class="category">
+        <h2>Хачапури</h2>
+        <div class="item">
+            <p>Хачапури по-аджарски с мясом - 300 г</p>
+            <p>540 ₽</p>
+            <button onclick="addToCart('Хачапури по-аджарски с мясом')">Добавить</button>
+        </div>
+        <div class="item">
+            <p>Хачапури по-грузински с варёным яйцом - 300 г</p>
+            <p>259 ₽</p>
+            <button onclick="addToCart('Хачапури по-грузински с варёным яйцом')">Добавить</button>
+        </div>
+        <div class="item">
+            <p>Хачапури по-царски с мясом - 330 г</p>
+            <p>569 ₽</p>
+            <button onclick="addToCart('Хачапури по-царски с мясом')">Добавить</button>
+        </div>
+        <div class="item">
+            <p>Хачапури по-аджарски - 320 г</p>
+            <p>400 ₽</p>
+            <button onclick="addToCart('Хачапури по-аджарски')">Добавить</button>
+        </div>
+        <div class="item">
+            <p>Хачапури слоёный Пеновани - 500 г</p>
+            <p>580 ₽</p>
+            <button onclick="addToCart('Хачапури слоёный Пеновани')">Добавить</button>
+        </div>
+    </div>
+
+    <div class="category">
+        <h2>Напитки</h2>
+        <div class="item">
+            <p>Напиток безалкогольный газированный Fanta - 300 мл</p>
+            <p>150 ₽</p>
+            <button onclick="addToCart('Напиток безалкогольный газированный Fanta')">Добавить</button>
+        </div>
+        <div class="item">
+            <p>Вода Bona Aqua газированная - 500 мл</p>
+            <p>150 ₽</p>
+            <button onclick="addToCart('Вода Bona Aqua газированная')">Добавить</button>
+        </div>
+        <div class="item">
+            <p>Сок Ама мама яблочно-персиковый - 200 мл</p>
+            <p>50 ₽</p>
+            <button onclick="addToCart('Сок Ама мама яблочно-персиковый')">Добавить</button>
+        </div>
+    </div>
+
+    <div class="category">
+        <h2>Десерты</h2>
+        <div class="item">
+            <p>Орешки со сгущенкой - 200 г</p>
+            <p>215 ₽</p>
+            <button onclick="addToCart('Орешки со сгущенкой')">Добавить</button>
+        </div>
+    </div>
+
+    <button id="orderBtn">Оформить заказ</button>
+
     <script src="script.js"></script>
 </body>
 </html>
